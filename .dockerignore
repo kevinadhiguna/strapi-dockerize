@@ -1,0 +1,8 @@
+# dockerignore file is similar to gitignore file, used by the git tool. 
+# similarly to . gitignore file, it allows you to specify a pattern for files and folders 
+#   that should be ignored by the Docker client when generating a build context.
+
+.cache
+node_modules
+public/uploads
+.env

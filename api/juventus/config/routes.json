@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/juventuses",
+      "handler": "juventus.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/juventuses/count",
+      "handler": "juventus.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/juventuses/:id",
+      "handler": "juventus.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/juventuses",
+      "handler": "juventus.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/juventuses/:id",
+      "handler": "juventus.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/juventuses/:id",
+      "handler": "juventus.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

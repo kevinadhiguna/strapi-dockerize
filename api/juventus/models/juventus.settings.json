@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "juventuses",
+  "info": {
+    "name": "Juventus"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "age": {
+      "type": "integer"
+    }
+  }
+}
