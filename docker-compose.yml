@@ -17,4 +17,6 @@ services:
       ADMIN_JWT_SECRET: YOUR_ADMIN_JWT_SECRET #(e.g. : ErhxCk10YqNCImwodl5Ml/Maqnw46oTyLjr+9Na4bjmJSLVWnCS90BJRAAkLsspj98caylAJgikBO9ZS0jEiOQ==)
     ports:
       - 'HOST_PORT:CONTAINER_PORT' #(Specify host port and container port, format => host port:container port. e.g. : '1337:1337')
+      # 'HOST_PORT' is the port that will be exposable to public.
+      # 'CONTAINER_PORT' is the internal port in which the app will be running on.
   
