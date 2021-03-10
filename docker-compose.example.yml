@@ -23,5 +23,5 @@ services:
     ports:
       - 'HOST_PORT:CONTAINER_PORT' #(Specify host port and container port, format => host port:container port. e.g. : '1337:1337')
       # -- NOTE --
-      # 'HOST_PORT' is the port that will be exposable to public.
+      # 'HOST_PORT' is the port that will be exposable to the public.
       # 'CONTAINER_PORT' is the internal port in which the app will be running on.
