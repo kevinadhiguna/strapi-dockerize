@@ -1,11 +1,14 @@
 # A dockerfile must always start by importing the base image.
 # We use the keyword 'FROM' to do that.
 # In our example, we want to import the Strapi image.
-# So we write 'strapi/base' for the image name.
-FROM strapi/base
+# So we write 'strapi/base' for the image name. ':14' is a tag that means we use NodeJS v14 (The latest LTS version).
+FROM strapi/base:14
 
 # Set Environment to Production Environment (Optional to include in Dockerfile)
 ENV NODE_ENV production
+
+# Set up working directory that will be used to copy files/directories below :
+WORKDIR /app
 
 # Copy package.json to root directory inside Docker container of Strapi app
 COPY package.json .
@@ -24,11 +27,10 @@ RUN yarn install --frozen-lockfile
 # '.' or '/' means the file will be put in the image root folder.
 COPY favicon.ico .
 COPY public/robots.txt public/
-COPY extensions/** extensions/
-COPY build/** build/
-COPY exports/** exports/
-COPY api/** api/
-COPY config/** config/
+COPY extensions/ extensions/
+# COPY exports/ exports/
+COPY api/ api/
+COPY config/ config/
 
 # Generate a folder called 'dist'.
 # A 'dist' folder stands for distributable and refers to a directory where files will be stored that can be directly used by others without the need to compile or minify the source code that is being reused.
