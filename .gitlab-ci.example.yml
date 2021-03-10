@@ -1,0 +1,51 @@
+variables:
+  DOCKER_REGISTRY: YOUR_DOCKER_REGISTRY # (e.g. : 704551740705.dkr.ecr.ap-northeast-3.amazonaws.com)
+  AWS_DEFAULT_REGION: YOUR_AWS_DEFAULT_REGION # (e.g. : ap-northeast-3) Please refer to [AWS service endppoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) for more.
+  APP_NAME: YOUR_APP_NAME # (e.g. : myproject/mystrapiapp)
+  DOCKER_HOST: YOUR_DOCKER_HOST # (e.g. : tcp://docker:2478)
+  # Use TLS https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#tls-enabled
+  # DOCKER_TLS_CERTDIR: "/certs"
+
+# Reference: https://medium.com/devops-with-valentine/gitlab-ci-build-push-docker-image-to-aws-ecr-elastic-container-registry-b63b91a58728
+
+# == for STAGING environment ==
+publish_staging:
+  stage: build
+  # Note: AWS CLI v2 does NOT work with Docker-Alpine: https://github.com/aws/aws-cli/issues/4685#issuecomment-556436861
+  # image: docker:latest
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  services:
+    - docker:dind
+  before_script:
+    - amazon-linux-extras install docker
+    - aws --version
+    - docker --version
+  script:
+    - aws ecr get-login-password | docker login --username AWS --password-stdin $DOCKER_REGISTRY
+    - docker build --cache from $DOCKER_REGISTRY/$APP_NAME:staging -t $DOCKER_REGISTRY/$APP_NAME:$CI_COMMIT_SHA -t $DOCKER_REGISTRY/$APP_NAME:staging .
+    - docker push $DOCKER_REGISTRY/$APP_NAME:$CI_COMMIT_SHA
+    - docker push $DOCKER_REGISTRY/$APP_NAME:staging
+  only:
+    - staging
+
+# == for PRODUCTION environment ==
+publish_production:
+  stage: build
+  # Note: AWS CLI v2 does NOT work with Docker-Alpine: https://github.com/aws/aws-cli/issues/4685#issuecomment-556436861
+  # image: docker:latest
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  services:
+    - docker:dind
+  before_script:
+    - amazon-linux-extras install docker
+  script:
+    - aws ecr get-login-password | docker login --username AWS --password-stdin $DOCKER_REGISTRY
+    - docker build --cache-from $DOCKER_REGISTRY/$APP_NAME:production -t $DOCKER_REGISTRY/$APP_NAME:$CI_COMMIT_SHA -t $DOCKER_REGISTRY/$APP_NAME:prodcution .
+    - docker push $DOCKER_REGISTRY/$APP_NAME:$CI_COMMIT_SHA
+    - docker push $DOCKER_REGISTRY/$APP_NAME:production
+  only:
+    - production
