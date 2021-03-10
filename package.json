@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "prettier:code": "prettier \"**/*.js\"",
+    "prettier:code": "prettier \"config/*.js\"",
     "prettier:other": "prettier \"**/*.{md,css,scss,yaml,yml}\""
   },
   "devDependencies": {
