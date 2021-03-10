@@ -11,12 +11,26 @@ module.exports = ({ env }) => ({
       defaultReplyTo: env('EMAIL_DEFAULT_REPLY_TO')
     }
   },
+  // == Please choose either for upload ==
+  // AWS Simple Storage Service (S3) configuration
   upload: {
-    provider: 'cloudinary',
+    provider: 'aws-s3',
     providerOptions: {
-      cloud_name: env('CLOUD_NAME', ''),
-      api_key: env('API_KEY', ''),
-      api_secret: env('API_SECRET', '')
+      accessKeyId: env('AWS_ACCESS_KEY_ID'),
+      secretAcessKey: env('AWS_ACCESS_SECRET'),
+      region: env('AWS_REGION'),
+      params: {
+        Bucket: env('AWS_BUCKET_NAME')
+      }
     }
   },
+  // Cloudinary configuration
+  // upload: {
+  //   provider: 'cloudinary',
+  //   providerOptions: {
+  //     cloud_name: env('CLOUD_NAME', ''),
+  //     api_key: env('API_KEY', ''),
+  //     api_secret: env('API_SECRET', '')
+  //   }
+  // },
 });
