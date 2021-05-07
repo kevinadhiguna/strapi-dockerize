@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "juventuses",
   "info": {
-    "name": "Juventus"
+    "name": "Juventus",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -18,6 +19,37 @@
     },
     "age": {
       "type": "integer"
+    },
+    "country": {
+      "type": "string"
+    },
+    "appearences": {
+      "type": "integer"
+    },
+    "goals": {
+      "type": "integer"
+    },
+    "minutesPlayed": {
+      "type": "integer"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "GK",
+        "DF",
+        "MF",
+        "FW"
+      ]
+    },
+    "profpic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
