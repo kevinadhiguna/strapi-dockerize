@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "strapi-dockerize",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "A Strapi app powered by Docker and docker-compose ",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
