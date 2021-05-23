@@ -12,7 +12,7 @@ module.exports = ({ env }) => ({
     }
   },
   // == Please choose either for upload ==
-  // AWS Simple Storage Service (S3) configuration
+  // -- 1st option: AWS Simple Storage Service (S3) configuration --
   // upload: {
   //   provider: 'aws-s3',
   //   providerOptions: {
@@ -26,7 +26,7 @@ module.exports = ({ env }) => ({
   //     logger: console // Only if you want to `stdout` logs
   //   }
   // },
-  // Cloudinary configuration
+  // -- 2nd option: Cloudinary configuration --
   upload: {
     provider: 'cloudinary',
     providerOptions: {
