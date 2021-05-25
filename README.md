@@ -15,7 +15,7 @@
   </p>
 </p>
 
-## 📚 Table of Contents :
+## 📚 Table of Contents
 
 - [🌈 About this project](#-about-this-project-)
 - [📖 How to Run](#-how-to-run-)
@@ -23,11 +23,11 @@
   - [🐋 using `docker-compose`](#-using-docker-compose---configure-docker-composeyml-)
 - [📰 Related Articles](#-related-articles)
 
-## 🌈 About this project :
+## 🌈 About this project
 
 This is a Strapi app powered by Docker and docker-compose. Nevertheless, this app provides an example and a guide to configure your Strapi app with hosted database service such as MongoDB Atlas.
 
-## 📖 How to Run :
+## 📖 How to Run
 
 1) Clone this repository :
 ```bash
