@@ -15,11 +15,11 @@
   </p>
 </p>
 
-## About this project :
+## 🌈 About this project :
 
 This is a Strapi app powered by Docker and docker-compose. Nevertheless, this app provides an example and a guide to configure your Strapi app with hosted database service such as MongoDB Atlas.
 
-## How to Run :
+## 📖 How to Run :
 
 1) Clone this repository :
 ```bash
@@ -43,7 +43,7 @@ yarn
 <br />
 <hr />
 
-### using `Yarn` -> setup environment variables (`.env`) :
+### 🧶 using `Yarn` -> setup environment variables (`.env`) :
 
 <br />
 
@@ -271,7 +271,7 @@ yarn develop
 <br />
 <hr />
 
-### using `docker-compose` -> configure `docker-compose.yml` :
+### 🐋 using `docker-compose` -> configure `docker-compose.yml` :
 
 <br />
 
