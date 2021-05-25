@@ -7,13 +7,17 @@
   <h3 align="center">Strapi Dockerize</h3>
 
   <p align="center">
-    A Strapi app powered by Docker and docker-compose
+    A Strapi app powered by Docker and docker-compose.
     <br />
     <a href="https://github.com/kevinadhiguna/strapi-dockerize/issues">Report Bug</a>
     ·
     <a href="https://github.com/kevinadhiguna/strapi-dockerize/issues">Request a Feature</a>
   </p>
 </p>
+
+## About this project :
+
+This is a Strapi app powered by Docker and docker-compose. Nevertheless, this app provides an example and a guide to configure your Strapi app with hosted database service such as MongoDB Atlas.
 
 ## How to Run :
 
