@@ -17,8 +17,8 @@
 
 ## 📚 Table of Contents
 
-- [🌈 About this project](#-about-this-project-)
-- [📖 How to Run](#-how-to-run-)
+- [🌈 About this project](#-about-this-project)
+- [📖 How to Run](#-how-to-run)
   - [🧶 using `yarn`](#-using-yarn---setup-environment-variables-env-)
   - [🐋 using `docker-compose`](#-using-docker-compose---configure-docker-composeyml-)
 - [📰 Related Articles](#-related-articles)
