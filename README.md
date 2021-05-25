@@ -1,3 +1,4 @@
+<br />
 <p align="center">
   <a href="https://github.com/kevinadhiguna/strapi-dockerize">
     <img src="https://s3.gifyu.com/images/4fgfcghvgyvtyy66564e.png" alt="Strapi Dockerize" border="0" width="250px" height="200px" />
@@ -15,6 +16,7 @@
 </p>
 
 ## How to Run :
+
 1) Clone this repository :
 ```bash
 git clone https://github.com/kevinadhiguna/strapi-dockerize
@@ -25,12 +27,21 @@ git clone https://github.com/kevinadhiguna/strapi-dockerize
 cd strapi-dockerize
 ```
 
-3) Install dependencies (using Yarn) :
+3) Install dependencies (using `yarn`) :
 ```bash
 yarn
 ```
 
-4) Setup environment variables :
+4) Run your Strapi app either with `yarn` of `docker-compose` :
+- If using `yarn`, please create `.env` then [set up environment variables]().
+- If using `docker-compose`, please create `docker-compose.yaml` then [configure docker-compose]().
+
+<br />
+<hr />
+
+### using `Yarn` -> setup environment variables (`.env`) :
+
+<br />
 
 Please create a `.env` file based on `.env.example` file and fill in the variables mentioned below :
 
@@ -94,7 +105,12 @@ yarn develop
 
 5) Open Strapi admin panel in a browser.
 
-### How to Run using Docker :
+<br />
+<hr />
+
+### using `docker-compose` -> configure `docker-compose.yml` :
+
+<br />
 
 <b>Prerequisites :</b><br>
 Please make sure you have Docker installed in your machine. Please refer [here](https://docs.docker.com/engine/install/) to install Docker.
@@ -200,7 +216,9 @@ If you do not make changes but want to run the app again :
 docker-compose up
 ```
 
-If you want to check the files inside the Docker container, you can use:
+<br />
+
+📝 **Note** : If you want to check the files inside the Docker container, you can use:
 
 ```bash
 docker-compose exec strapi /bin/sh
@@ -223,7 +241,14 @@ git push origin master:production
 ```
 -->
 
-Please read this article to use this project : https://about.lovia.life/creating-strapi-app-image-with-docker/.
+<br />
+<hr />
+
+## 📰 Related Article
+
+Please read this article to use this project : https://about.lovia.life/creating-strapi-app-image-with-docker/. <br />
 Thanks!
+
+<br />
 
 [![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/strapi-dockerize)](https://github.com/kevinadhiguna)
