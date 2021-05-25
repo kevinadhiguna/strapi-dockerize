@@ -47,17 +47,71 @@ Please create a `.env` file based on `.env.example` file and fill in the variabl
 
 #### DATABASE_HOST
 
+If you run your database locally or in your computer, fill :<br />
+```bash
+DATABASE_HOST=127.0.01
+```
+
+Otherwise, please enter your database host URL, such as :<br />
+```bash
+DATABASE_HOST=cluster3.abc65.mongodb.net
+```
+
+The above is an example if you host your database in [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+
 #### DATABASE_SRV
+
+Value of Database SRV in MongoDB. It could be either `true` or `false` as it is boolean. For example :<br />
+```bash
+DATABASE_SRV=true
+```
+
+>SRV is a way to specify a single hostname that resolves to multiple host names. When using SRV, the driver conducts an SRV lookup to get the actual names of all of the hosts. Also, when using SRV, the driver does lookups for TXT records, which can contain specific URI options to configure the driver.
+
+Please have a look at [MongoDB community forum](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjl6OTUjOXwAhWY4nMBHa4RBgkQFjACegQIBhAD&url=https%3A%2F%2Fdeveloper.mongodb.com%2Fcommunity%2Fforums%2Ft%2Fmongodb-or-mongodb-srv%2F1654&usg=AOvVaw1nNUDlH5GVNZDFSL0jl2kj) for more.
 
 #### DATABASE_PORT
 
+Port that your Strapi app interacts with database management system (DBMS). For example :<br />
+```bash
+DATABASE_PORT=27017
+```
+
 #### DATABASE_NAME
+
+The database name in database management system (e.g. : MongoDB, MySQL, PostgreSQL). For instance :<br />
+```bash
+DATABASE_NAME=myStrapiApp
+```
 
 #### DATABASE_USERNAME
 
+The username of your database that you use in your Strapi app. For instance :<br />
+```bash
+DATABASE_USERNAME=admin
+```
+
 #### DATABASE_PASSWORD
 
+The password of your database that you use in your Strapi app. For instance :<br />
+```bash
+DATABASE_PASSWORD=admin123
+```
+
 #### DATABASE_SSL
+
+Usually, you set this field if your database in your Strapi app is hosted, for example : 
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for MongoDB
+- [Free MySQL Hosting](https://www.freemysqlhosting.net/) for MySQL
+- [ElephantSQL](https://www.elephantsql.com/) for PostgreSQL
+
+Then in order to establish a secure connection, you want enable SSL. If so, set :<br />
+```bash
+DATABASE_SSL=true
+```
+
+This fields is boolean. Hence, you can either set it to `true` or `false` only.
+
 
 #### CORS_ORIGIN
 
@@ -77,34 +131,56 @@ CORS_ORIGIN=http://192.168.1.4:1337,http://192.168.1.4:3000
 
 #### AWS_ACCESS_KEY_ID
 
-#### AWS_SECRET_KEY_ID
+For example :<br />
+```bash
+AWS_ACCESS_KEY_ID=DGHY4REH7IUVDF908UNV
+```
+
+#### AWS_SECRET_ACCESS_KEY
+
+For example :<br />
+```bash
+AWS_SECRET_ACCESS_KEY=3bFhYF76zFG+5F78436KJ8bH3x19TALuIxytfNc/
+```
 
 #### AWS_REGION
 
 For example :
 ```bash
-AWS_REGION=ap-southeast-1
+AWS_REGION=eu-west-2
 ```
+
+Please see [AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) for details. 
 
 #### EMAIL_DEFAULT_FROM
 
-An email address your Strapi app will send email from. For example :<br />
+An email address your Strapi app will send an email from. For example :<br />
 ```bash
 EMAIL_DEFAULT_DEFAULT_FROM=hello@example.com
 ```
 
 #### EMAIL_DEFAULT_REPLY_TO
 
-An email address your Strapi app will send email from. For example :<br />
+An email address your Strapi app will be receiving emails. For example :<br />
 ```bash
 EMAIL_DEFAULT_REPLY_TO=reply@example.com
 ```
 
 #### AWS_BUCKET_NAME
 
+For example :
+```bash
+AWS_BUCKET_NAME=mybucket.mydomain.com
+```
+
 #### AWS_S3_STORAGE_CLASSES
 
+For example :
+```bash
+AWS_S3_STORAGE_CLASSES=S3 Standard
+```
 
+You can read more about [AWS Storage Classes](https://aws.amazon.com/s3/storage-classes/).
 
 #### CLOUD_NAME
 
@@ -125,7 +201,6 @@ API_KEY=253857109845223
 ```
 
 You can leave it blank if you do not use Cloudinary.
-
 
 #### API_SECRET
 
@@ -153,7 +228,7 @@ For example :
 PORT=1337
 ```
 
-#### Admin JWT Secret
+#### ADMIN_JWT_SECRET
 
 Generate a secure token is required for superadmin authentication.<br>
 In terminal, please type :
