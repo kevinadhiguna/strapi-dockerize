@@ -45,23 +45,21 @@ yarn
 
 Please create a `.env` file based on `.env.example` file and fill in the variables mentioned below :
 
-#### Host
+#### DATABASE_HOST
 
-Simply open terminal and type `ifconfig` (MacOS / Linux-based OS) or `ipconfig` (Windows). You should see like `192.168.1.4` which is the value of this variable.<br>
-Example : 
-```bash
-HOST=http://192.168.1.4
-```
+#### DATABASE_SRV
 
-#### Port
+#### DATABASE_PORT
 
-Specify the port that you want to run.<br>
-For example : 
-```bash
-PORT=1337
-```
+#### DATABASE_NAME
 
-#### CORS Origin
+#### DATABASE_USERNAME
+
+#### DATABASE_PASSWORD
+
+#### DATABASE_SSL
+
+#### CORS_ORIGIN
 
 Please add URL/IP address of :
 - App's client-side (a Web App and/or a Mobile app)
@@ -75,6 +73,84 @@ CORS only cares three aspects, namely :
 So, if your app's client-side and Strapi admin panel run on http://192.168.1.4:3000 and http://192.168.1.4:1337 respectively, you should write : 
 ```bash
 CORS_ORIGIN=http://192.168.1.4:1337,http://192.168.1.4:3000
+```
+
+#### AWS_ACCESS_KEY_ID
+
+#### AWS_SECRET_KEY_ID
+
+#### AWS_REGION
+
+For example :
+```bash
+AWS_REGION=ap-southeast-1
+```
+
+#### EMAIL_DEFAULT_FROM
+
+An email address your Strapi app will send email from. For example :<br />
+```bash
+EMAIL_DEFAULT_DEFAULT_FROM=hello@example.com
+```
+
+#### EMAIL_DEFAULT_REPLY_TO
+
+An email address your Strapi app will send email from. For example :<br />
+```bash
+EMAIL_DEFAULT_REPLY_TO=reply@example.com
+```
+
+#### AWS_BUCKET_NAME
+
+#### AWS_S3_STORAGE_CLASSES
+
+
+
+#### CLOUD_NAME
+
+This is the cloud name of your Coudinary account. <br />
+This looks like :
+```bash
+CLOUD_NAME=ehsjuvnxpz
+```
+
+Please leave it blank if your Strapi app foes not use Cloudinary. 
+
+#### API_KEY
+
+This is API key from Cloudinary. <br />
+For instance :
+```bash
+API_KEY=253857109845223
+```
+
+You can leave it blank if you do not use Cloudinary.
+
+
+#### API_SECRET
+
+This is API secret from Cloudinary. <br /> 
+For example :
+```bash
+API_SECRET=DBVrte27_GtyrIUxFGydk_R8tRX
+```
+
+If you do not use Cloudinary, you can leave it blank.
+
+#### HOST
+
+Simply open terminal and type `ifconfig` (MacOS / Linux-based OS) or `ipconfig` (Windows). You should see like `192.168.1.4` which is the value of this variable.<br>
+Example : 
+```bash
+HOST=http://192.168.1.4
+```
+
+#### PORT
+
+Specify the port that you want to run.<br>
+For example : 
+```bash
+PORT=1337
 ```
 
 #### Admin JWT Secret
@@ -96,6 +172,14 @@ Please copy the token and assign it like this :
 
 ```bash
 ADMIN_JWT_SECRET=ErhxCk10YqNCImwodl5Ml/Maqnw46oTyLjr+9Na4bjmJSLVWnCS90BJRAAkLsspj98caylAJgikBO9ZS0jEiOQ==
+```
+
+#### NODE_ENV
+
+This refers to the environment that your application runs. It could be `development`, `staging`, `production`, or something else.<br/>
+For example :
+```bash
+NODE_ENV=development
 ```
 
 4) Start Strapi app :
