@@ -403,9 +403,16 @@ git push origin master:production
 <br />
 <hr />
 
-## 📰 Related Article
+## 📰 Related Articles
 
-Please read this article to use this project : https://about.lovia.life/creating-strapi-app-image-with-docker/. <br />
+- [How to setup Amazon S3 upload provider in your Strapi app](https://dev.to/kevinadhiguna/how-to-setup-amazon-s3-upload-provider-in-your-strapi-app-1opc)
+- [How to setup AWS SES email provider in your Strapi app](https://dev.to/kevinadhiguna/how-to-setup-aws-ses-email-provider-in-your-strapi-app-2lf2)
+- [What is CORS ? How to configure CORS in Strapi ?](https://dev.to/kevinadhiguna/what-is-cors-how-to-configure-cors-in-strapi-461b)
+- [How to disable telemetry in Strapi](https://dev.to/kevinadhiguna/disable-telemetry-in-strapi-2egf)
+
+Also, this article might be helpful to use this project : https://about.lovia.life/creating-strapi-app-image-with-docker/.
+<br />
+
 Thanks!
 
 <br />
