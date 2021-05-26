@@ -1,10 +1,13 @@
 <br />
-<p align="center">
+<div align="center">
   <a href="https://github.com/kevinadhiguna/strapi-dockerize">
     <img src="https://s3.gifyu.com/images/4fgfcghvgyvtyy66564e.png" alt="Strapi Dockerize" border="0" width="350px" height="300px" />
   </a>
 
   <h3 align="center">Strapi Dockerize</h3>
+  
+  [![Build With Yarn](https://img.shields.io/badge/build%20with-yarn-028fe4.svg?style=flat-square)](https://yarnpkg.com/)
+  [![Build With Docker](https://img.shields.io/badge/build%20with-docker-2496ED.svg?style=flat-square)](https://www.docker.com/)<br/>
 
   <p align="center">
     A Strapi app powered by Docker and docker-compose.
@@ -13,7 +16,12 @@
     ·
     <a href="https://github.com/kevinadhiguna/strapi-dockerize/issues">Request a Feature</a>
   </p>
-</p>
+</div>
+
+<div align="center">
+  <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+  <img alt="Docker" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" />
+</div>
 
 ## 📚 Table of Contents
 
