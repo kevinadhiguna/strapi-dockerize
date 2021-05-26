@@ -300,23 +300,30 @@ Using `staging` and `development` will turn on AWS S3 storage.
 Example:
 
 ```bash
-NODE_ENV: prodcution
+NODE_ENV: development
 ```
 
 #### DATABASE_CLIENT
-Name of the database client. We use MongoDB so the value is `mongo`.<br>
+Name of the database client. Set to `mongo` if you use MongoDB.<br>
 ```bash
 DATABASE_CLIENT: mongo
 ```
 
 #### DATABASE_HOST
-Host of database such as `127.0.0.1` (localhost) or a URL like `cluster3.abc65.mongodb.net` if you useMongoDB Atlas. This is just an example if you run it locally :<br>
+Host of database such as `127.0.0.1` (localhost) or a URL like `cluster3.abc65.mongodb.net` if you useMongoDB Atlas. <br />
+
+If you run your database locally or in your computer, fill :<br />
 ```bash
-DATABASE_HOST: 127.0.0.1
+DATABASE_HOST=127.0.01
+```
+
+Otherwise, please enter your database host URL, such as :<br />
+```bash
+DATABASE_HOST=cluster3.abc65.mongodb.net
 ```
 
 #### DATABASE_SRV
-Please note that it MUST be string or null. Possible values : `true` or `false`. For instance :<br>
+Please note that it must be string or null. Possible values : `true` or `false`. For instance :<br>
 ```bash
 DATABASE_SRV: true
 ```
@@ -342,7 +349,7 @@ DATABASE_USERNAME: admin
 #### DATABASE_PASSWORD  
 Generate a strong password for database, namely : <br>
 ```bash
-DATABASE_PASSWORD: admin
+DATABASE_PASSWORD: admin123
 ```
       
 #### DATABASE_SSL
@@ -352,10 +359,11 @@ DATABASE_SSL: 'true'
 ```
       
 #### CORS_ORIGIN
-Put allowed Cross-Origin Resource Sharing (CORS) origin here. It is possibly only one or even more. To illustrate :<br>
+Put allowed Cross-Origin Resource Sharing (CORS) origin here. It is possibly only one or even more. if your app's client-side and Strapi admin panel run on http://192.168.1.4:3000 and http://192.168.1.4:1337 respectively, you should write : 
 ```bash
-CORS_ORIGIN: http://192.168.1.4:8000,http://192.168.1.4:3000,http://192.168.1.4:1337
+CORS_ORIGIN: http://192.168.1.4:3000,http://192.168.1.4:1337
 ```
+
 Read [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) for more.
       
 #### ADMIN_JWT_SECRET
@@ -366,7 +374,7 @@ ADMIN_JWT_SECRET: ErhxCk10YqNCImwodl5Ml/Maqnw46oTyLjr+9Na4bjmJSLVWnCS90BJRAAkLss
 
 Please refer to [How to generate Admin JWT Secret](#admin_jwt_secret) above for more.
 
-#### PORTS
+#### ports
 These ports are not meant for database management system but for the app. There are a couple of ports which are host port and container port. Host port is a port exposed to public. Meanwhile, container port is an internal port that will be accessed through the machine you use. In particular :<br>
 ```bash
 ports:
@@ -374,6 +382,8 @@ ports:
 ```
 
 #### AWS environment variables
+
+Only if you use Amazon Web Service (AWS) :
 
 * `AWS_REGION` 
 * `AWS_ACCESS_KEY_ID`
