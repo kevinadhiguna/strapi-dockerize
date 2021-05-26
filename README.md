@@ -182,11 +182,11 @@ An email address your Strapi app will be receiving emails. For example :<br />
 EMAIL_DEFAULT_REPLY_TO=reply@example.com
 ```
 
-#### AWS_BUCKET_NAME
+#### AWS_BUCKET
 
 For example :
 ```bash
-AWS_BUCKET_NAME=mybucket.mydomain.com
+AWS_BUCKET=mybucket.mydomain.com
 ```
 
 #### AWS_S3_STORAGE_CLASSES
