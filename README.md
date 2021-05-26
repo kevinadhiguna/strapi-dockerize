@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/kevinadhiguna/strapi-dockerize">
-    <img src="https://s3.gifyu.com/images/4fgfcghvgyvtyy66564e.png" alt="Strapi Dockerize" border="0" width="250px" height="200px" />
+    <img src="https://s3.gifyu.com/images/4fgfcghvgyvtyy66564e.png" alt="Strapi Dockerize" border="0" width="350px" height="300px" />
   </a>
 
   <h3 align="center">Strapi Dockerize</h3>
@@ -17,11 +17,15 @@
 
 ## 📚 Table of Contents
 
-- [🌈 About this project](#-about-this-project)
-- [📖 How to Run](#-how-to-run)
-  - [🧶 using `yarn`](#-using-yarn---setup-environment-variables-env-)
-  - [🐋 using `docker-compose`](#-using-docker-compose---configure-docker-composeyml-)
-- [📰 Related Articles](#-related-articles)
+1. [🌈 About this project](#-about-this-project)
+2. [📖 How to Run](#-how-to-run)
+   - [🧶 using `yarn`](#-using-yarn---setup-environment-variables-env-)
+      - Create a `.env` file then set up Environment Variables
+      - Run your Strapi app with `yarn`
+   - [🐋 using `docker-compose`](#-using-docker-compose---configure-docker-composeyml-)
+      - Create a `docker-compose.yml` then configure it
+      - Run your Strapi app with `docker-compose`
+3. [📰 Related Articles](#-related-articles)
 
 ## 🌈 About this project
 
@@ -29,22 +33,22 @@ This is a Strapi app powered by Docker and docker-compose. Nevertheless, this ap
 
 ## 📖 How to Run
 
-1) Clone this repository :
+1. Clone this repository :
 ```bash
 git clone https://github.com/kevinadhiguna/strapi-dockerize
 ```
 
-2) Change directory
+2. Change directory
 ```bash
 cd strapi-dockerize
 ```
 
-3) Install dependencies (using `yarn`) :
+3. Install dependencies (using `yarn`) :
 ```bash
 yarn
 ```
 
-4) Run your Strapi app either with `yarn` of `docker-compose` :
+4. Run your Strapi app either with `yarn` of `docker-compose` :
 - If using `yarn`, please create `.env` then [set up environment variables]().
 - If using `docker-compose`, please create `docker-compose.yaml` then [configure docker-compose]().
 
@@ -55,7 +59,7 @@ yarn
 
 <br />
 
-Please create a `.env` file based on `.env.example` file and fill in the variables mentioned below :
+1. Please create a `.env` file based on `.env.example` file and fill in the variables mentioned below :
 
 #### DATABASE_HOST
 
@@ -269,12 +273,12 @@ For example :
 NODE_ENV=development
 ```
 
-4) Start Strapi app :
+2. Start Strapi app :
 ```bash
 yarn develop
 ```
 
-5) Open Strapi admin panel in a browser.
+3. Open Strapi admin panel in a browser.
 
 <br />
 <hr />
@@ -287,7 +291,7 @@ yarn develop
 Please make sure you have Docker installed in your machine. Please refer [here](https://docs.docker.com/engine/install/) to install Docker.
 <br>
 
-1) Assign values of environment variables in `docker-compose.yml` file
+1. Assign values of environment variables in `docker-compose.yml` file
 
 #### NODE_ENV
 Here we specify running environment whether it is `production`, `staging`, `development`, etc.
@@ -296,23 +300,30 @@ Using `staging` and `development` will turn on AWS S3 storage.
 Example:
 
 ```bash
-NODE_ENV: prodcution
+NODE_ENV: development
 ```
 
 #### DATABASE_CLIENT
-Name of the database client. We use MongoDB so the value is `mongo`.<br>
+Name of the database client. Set to `mongo` if you use MongoDB.<br>
 ```bash
 DATABASE_CLIENT: mongo
 ```
 
 #### DATABASE_HOST
-Host of database such as `127.0.0.1` (localhost) or a URL like `cluster3.abc65.mongodb.net` if you useMongoDB Atlas. This is just an example if you run it locally :<br>
+Host of database such as `127.0.0.1` (localhost) or a URL like `cluster3.abc65.mongodb.net` if you useMongoDB Atlas. <br />
+
+If you run your database locally or in your computer, fill :<br />
 ```bash
-DATABASE_HOST: 127.0.0.1
+DATABASE_HOST=127.0.01
+```
+
+Otherwise, please enter your database host URL, such as :<br />
+```bash
+DATABASE_HOST=cluster3.abc65.mongodb.net
 ```
 
 #### DATABASE_SRV
-Please note that it MUST be string or null. Possible values : `true` or `false`. For instance :<br>
+Please note that it must be string or null. Possible values : `true` or `false`. For instance :<br>
 ```bash
 DATABASE_SRV: true
 ```
@@ -338,7 +349,7 @@ DATABASE_USERNAME: admin
 #### DATABASE_PASSWORD  
 Generate a strong password for database, namely : <br>
 ```bash
-DATABASE_PASSWORD: admin
+DATABASE_PASSWORD: admin123
 ```
       
 #### DATABASE_SSL
@@ -348,10 +359,11 @@ DATABASE_SSL: 'true'
 ```
       
 #### CORS_ORIGIN
-Put allowed Cross-Origin Resource Sharing (CORS) origin here. It is possibly only one or even more. To illustrate :<br>
+Put allowed Cross-Origin Resource Sharing (CORS) origin here. It is possibly only one or even more. if your app's client-side and Strapi admin panel run on http://192.168.1.4:3000 and http://192.168.1.4:1337 respectively, you should write : 
 ```bash
-CORS_ORIGIN: http://192.168.1.4:8000,http://192.168.1.4:3000,http://192.168.1.4:1337
+CORS_ORIGIN: http://192.168.1.4:3000,http://192.168.1.4:1337
 ```
+
 Read [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) for more.
       
 #### ADMIN_JWT_SECRET
@@ -360,9 +372,9 @@ Generate a secure token for superadmin authentication. Below is an example :<br>
 ADMIN_JWT_SECRET: ErhxCk10YqNCImwodl5Ml/Maqnw46oTyLjr+9Na4bjmJSLVWnCS90BJRAAkLsspj98caylAJgikBO9ZS0jEiOQ==
 ```
 
-Please refer to [How to generate Admin JWT Secret](#admin-jwt-secret) above for more.
+Please refer to [How to generate Admin JWT Secret](#admin_jwt_secret) above for more.
 
-#### PORTS
+#### ports
 These ports are not meant for database management system but for the app. There are a couple of ports which are host port and container port. Host port is a port exposed to public. Meanwhile, container port is an internal port that will be accessed through the machine you use. In particular :<br>
 ```bash
 ports:
@@ -370,6 +382,8 @@ ports:
 ```
 
 #### AWS environment variables
+
+Only if you use Amazon Web Service (AWS) :
 
 * `AWS_REGION` 
 * `AWS_ACCESS_KEY_ID`
