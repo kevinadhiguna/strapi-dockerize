@@ -447,7 +447,7 @@ git push origin master:production
 Also, this article might be helpful to use this project : https://about.lovia.life/creating-strapi-app-image-with-docker/.
 <br />
 
-Thanks!
+Should you have any questions or discussion, please feel free to ask [here](https://github.com/kevinadhiguna/strapi-dockerize/issues). Thanks!
 
 <br />
 
