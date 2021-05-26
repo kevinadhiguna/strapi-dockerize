@@ -17,11 +17,15 @@
 
 ## 📚 Table of Contents
 
-- [🌈 About this project](#-about-this-project)
-- [📖 How to Run](#-how-to-run)
-  - [🧶 using `yarn`](#-using-yarn---setup-environment-variables-env-)
-  - [🐋 using `docker-compose`](#-using-docker-compose---configure-docker-composeyml-)
-- [📰 Related Articles](#-related-articles)
+1. [🌈 About this project](#-about-this-project)
+2. [📖 How to Run](#-how-to-run)
+   - [🧶 using `yarn`](#-using-yarn---setup-environment-variables-env-)
+      - Create a `.env` file then set up Environment Variables
+      - Run your Strapi app with `yarn`
+   - [🐋 using `docker-compose`](#-using-docker-compose---configure-docker-composeyml-)
+      - Create a `docker-compose.yml` then configure it
+      - Run your Strapi app with `docker-compose`
+3. [📰 Related Articles](#-related-articles)
 
 ## 🌈 About this project
 
@@ -29,22 +33,22 @@ This is a Strapi app powered by Docker and docker-compose. Nevertheless, this ap
 
 ## 📖 How to Run
 
-1) Clone this repository :
+1. Clone this repository :
 ```bash
 git clone https://github.com/kevinadhiguna/strapi-dockerize
 ```
 
-2) Change directory
+2. Change directory
 ```bash
 cd strapi-dockerize
 ```
 
-3) Install dependencies (using `yarn`) :
+3. Install dependencies (using `yarn`) :
 ```bash
 yarn
 ```
 
-4) Run your Strapi app either with `yarn` of `docker-compose` :
+4. Run your Strapi app either with `yarn` of `docker-compose` :
 - If using `yarn`, please create `.env` then [set up environment variables]().
 - If using `docker-compose`, please create `docker-compose.yaml` then [configure docker-compose]().
 
