@@ -55,7 +55,7 @@ yarn
 
 <br />
 
-Please create a `.env` file based on `.env.example` file and fill in the variables mentioned below :
+1. Please create a `.env` file based on `.env.example` file and fill in the variables mentioned below :
 
 #### DATABASE_HOST
 
@@ -269,12 +269,12 @@ For example :
 NODE_ENV=development
 ```
 
-4) Start Strapi app :
+2. Start Strapi app :
 ```bash
 yarn develop
 ```
 
-5) Open Strapi admin panel in a browser.
+3. Open Strapi admin panel in a browser.
 
 <br />
 <hr />
@@ -287,7 +287,7 @@ yarn develop
 Please make sure you have Docker installed in your machine. Please refer [here](https://docs.docker.com/engine/install/) to install Docker.
 <br>
 
-1) Assign values of environment variables in `docker-compose.yml` file
+1. Assign values of environment variables in `docker-compose.yml` file
 
 #### NODE_ENV
 Here we specify running environment whether it is `production`, `staging`, `development`, etc.
