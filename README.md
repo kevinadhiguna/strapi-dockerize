@@ -364,7 +364,7 @@ Generate a secure token for superadmin authentication. Below is an example :<br>
 ADMIN_JWT_SECRET: ErhxCk10YqNCImwodl5Ml/Maqnw46oTyLjr+9Na4bjmJSLVWnCS90BJRAAkLsspj98caylAJgikBO9ZS0jEiOQ==
 ```
 
-Please refer to [How to generate Admin JWT Secret](#admin-jwt-secret) above for more.
+Please refer to [How to generate Admin JWT Secret](#admin_jwt_secret) above for more.
 
 #### PORTS
 These ports are not meant for database management system but for the app. There are a couple of ports which are host port and container port. Host port is a port exposed to public. Meanwhile, container port is an internal port that will be accessed through the machine you use. In particular :<br>
