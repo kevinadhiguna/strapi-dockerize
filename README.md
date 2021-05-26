@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/kevinadhiguna/strapi-dockerize">
-    <img src="https://s3.gifyu.com/images/4fgfcghvgyvtyy66564e.png" alt="Strapi Dockerize" border="0" width="250px" height="200px" />
+    <img src="https://s3.gifyu.com/images/4fgfcghvgyvtyy66564e.png" alt="Strapi Dockerize" border="0" width="350px" height="300px" />
   </a>
 
   <h3 align="center">Strapi Dockerize</h3>
