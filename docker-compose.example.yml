@@ -2,9 +2,9 @@ version: '3'
 services:
   strapi:
     build: .
-    # == MongoDB Atlas configuration ==
     environment:
       NODE_ENV: YOUR_APP_ENVIRONMENT #(production, staging, development, etc.)
+      # == MongoDB Atlas configuration ==
       DATABASE_CLIENT: mongo
       DATABASE_HOST: DB_HOST #(e.g. : cluster3.abc65.mongodb.net if you are using MongoDB Atlas)
       # -- NOTE --
