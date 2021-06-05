@@ -35,4 +35,8 @@ module.exports = ({ env }) => ({
       api_secret: env('API_SECRET', '')
     }
   },
+  sentry: {
+    dsn: env('SENTRY_DSN'),
+    sendMetadata: false
+  }
 });
