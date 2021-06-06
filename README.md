@@ -236,6 +236,14 @@ API_SECRET=DBVrte27_GtyrIUxFGydk_R8tRX
 
 If you do not use Cloudinary, you can leave it blank.
 
+#### SENTRY_DSN
+
+This is a Sentry DSN that you obtain from Sentry if you use it. Otherwise, leave it blank. <br />
+For example :
+```bash
+SENTRY_DSN=https://vx547s32f45d7v91q865hgh5421z8932@f584318.ingest.sentry.io/6712395
+```
+
 #### HOST
 
 Simply open terminal and type `ifconfig` (MacOS / Linux-based OS) or `ipconfig` (Windows). You should see like `192.168.1.4` which is the value of this variable.<br>
