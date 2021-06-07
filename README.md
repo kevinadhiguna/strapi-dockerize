@@ -330,12 +330,12 @@ Host of database such as `127.0.0.1` (localhost) or a URL like `cluster3.abc65.m
 
 If you run your database locally or in your computer, fill :<br />
 ```bash
-DATABASE_HOST=127.0.01
+DATABASE_HOST: 127.0.01
 ```
 
 Otherwise, please enter your database host URL, such as :<br />
 ```bash
-DATABASE_HOST=cluster3.abc65.mongodb.net
+DATABASE_HOST: cluster3.abc65.mongodb.net
 ```
 
 #### DATABASE_SRV
