@@ -1,5 +1,5 @@
 {
   "jwt": {
-    "expiresIn": "999d"
+    "expiresIn": "5y"
   }
 }
