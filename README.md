@@ -304,10 +304,13 @@ yarn develop
 <br />
 
 <b>Prerequisites :</b><br>
-Please make sure you have Docker installed in your machine. Please refer [here](https://docs.docker.com/engine/install/) to install Docker.
+Please make sure you have Docker and Docker Compose installed in your machine. Please refer here to install them :
+1. [Docker](https://docs.docker.com/engine/install/) installation
+2. [Docker compose](https://docs.docker.com/compose/install/) installation
 <br>
 
-1. Assign values of environment variables in `docker-compose.yml` file
+1. Copy `docker-compose.example.yml` file then paste the content into a newly created `docker-compose.yml` file.
+2. Assign values of environment variables in `docker-compose.yml` file.
 
 #### NODE_ENV
 Here we specify running environment whether it is `production`, `staging`, `development`, etc.
