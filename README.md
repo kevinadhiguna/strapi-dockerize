@@ -57,8 +57,8 @@ yarn
 ```
 
 4. Run your Strapi app either with `yarn` of `docker-compose` :
-- If using `yarn`, please create `.env` then [set up environment variables]().
-- If using `docker-compose`, please create `docker-compose.yaml` then [configure docker-compose]().
+- If using `yarn`, please create `.env` then [set up environment variables](#-using-yarn---setup-environment-variables-env-).
+- If using `docker-compose`, please create `docker-compose.yaml` then [configure docker-compose](#-using-docker-compose---configure-docker-composeyml-).
 
 <br />
 <hr />
