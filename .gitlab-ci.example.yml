@@ -1,8 +1,9 @@
 variables:
   DOCKER_REGISTRY: YOUR_DOCKER_REGISTRY # (e.g. : 704551740705.dkr.ecr.ap-northeast-3.amazonaws.com)
-  AWS_DEFAULT_REGION: YOUR_AWS_DEFAULT_REGION # (e.g. : ap-northeast-3) Please refer to [AWS service endppoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) for more.
+  AWS_DEFAULT_REGION: YOUR_AWS_DEFAULT_REGION # (e.g. : ap-northeast-3) Please refer to AWS service endppoints(https://docs.aws.amazon.com/general/latest/gr/rande.html) for more.
   APP_NAME: YOUR_APP_NAME # (e.g. : myproject/mystrapiapp)
-  DOCKER_HOST: YOUR_DOCKER_HOST # (e.g. : tcp://docker:2478)
+  # Please refer to Daemon Socket Option (https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-socket-option) to assign the DOCKER_HOST variable.
+  DOCKER_HOST: YOUR_DOCKER_SOCKET_OPTION # (e.g. : tcp://docker:2375 for unencrypted communication, and tcp://docker:2376 for encrypted communication with daemon). 
   # Use TLS https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#tls-enabled
   # DOCKER_TLS_CERTDIR: "/certs"
 
