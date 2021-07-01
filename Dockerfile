@@ -27,6 +27,7 @@ RUN yarn install --frozen-lockfile
 # '.' or '/' means the file will be put in the image root folder.
 COPY favicon.ico .
 COPY public/robots.txt public/
+COPY public/index.html public/
 COPY extensions/ extensions/
 # COPY exports/ exports/
 COPY api/ api/
