@@ -444,12 +444,29 @@ ports:
 
 Only if you use Amazon Web Service (AWS) :
 
-* `AWS_REGION` 
-* `AWS_ACCESS_KEY_ID`
-* `AWS_SECRET_ACCESS_KEY`
-* `AWS_BUCKET`
+* `AWS_REGION`
+```bash
+AWS_REGION: eu-west-3
+```
 
-2. Run your App
+* `AWS_ACCESS_KEY_ID`
+```bash
+AWS_ACCESS_KEY_ID: DGHY4REH7IUVDF908UNV
+```
+
+* `AWS_SECRET_ACCESS_KEY`
+```bash
+AWS_SECRET_ACCESS_KEY: 3bFhYF76zFG+5F78436KJ8bH3x19TALuIxytfNc/
+```
+
+* `AWS_BUCKET`
+```bash
+AWS_BUCKET: mybucket.mydomain.com
+```
+
+<br />
+
+2. Run your App. <br/>
 If you run it for the first time or make changes, please run :
 ```bash
 docker-compose up --build
