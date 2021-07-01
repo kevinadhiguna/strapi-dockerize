@@ -18,8 +18,15 @@ services:
       # When using MongoDB Atlas, DATABASE_SSL must be set to 'true'. Otherwise (local MongoDB) set it to 'false'.
       DATABASE_SSL: 'true' #('true' or 'false', please note that it MUST be string or null)
       # AUTHENTICATION_DATABASE: admin
+      # == CORS ==
       CORS_ORIGIN: ALLOWED_CORS_ORIGIN #(e.g. : http://192.168.1.5:8000,http://192.168.1.5:3000,http://192.168.1.16:1337) 
+      # == JWT SECRET for your Strapi app ==
       ADMIN_JWT_SECRET: YOUR_ADMIN_JWT_SECRET #(e.g. : ErhxCk10YqNCImwodl5Ml/Maqnw46oTyLjr+9Na4bjmJSLVWnCS90BJRAAkLsspj98caylAJgikBO9ZS0jEiOQ==)
+      # == AWS configuration ==
+      AWS_REGION: AWS_REGION #(e.g.: eu-west-3)
+      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID #(e.g.: DGHY4REH7IUVDF908UNV)
+      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY #(e.g.: 3bFhYF76zFG+5F78436KJ8bH3x19TALuIxytfNc/)
+      AWS_BUCKET: AWS_BUCKET #(e.g.: mybucket.mydomain.com)
     ports:
       - 'HOST_PORT:CONTAINER_PORT' #(Specify host port and container port, format => host port:container port. e.g. : '1337:1337')
       # -- NOTE --
