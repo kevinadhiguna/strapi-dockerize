@@ -505,6 +505,16 @@ git push origin master:production
 <br />
 <hr />
 
+## 🖼️ Pull this project's docker image from DockerHub
+
+You can also use this project's docker imade from DockerHub:
+<!--
+```bash
+docker pull kevinadhiguna/strapi-dockerize:production
+```
+-->
+DockerHub repo : https://hub.docker.com/repository/docker/kevinadhiguna/strapi-dockerize
+
 ## 📰 Related Articles
 
 - [How to setup Amazon S3 upload provider in your Strapi app](https://dev.to/kevinadhiguna/how-to-setup-amazon-s3-upload-provider-in-your-strapi-app-1opc)
