@@ -34,7 +34,8 @@
    - [🐋 using `docker-compose`](#-using-docker-compose---configure-docker-composeyml-)
       - Create a `docker-compose.yml` then configure it
       - Run your Strapi app with `docker-compose`
-4. [📰 Related Articles](#-related-articles)
+4. [🖼️ Pull this project's docker image from DockerHub](#%EF%B8%8F-pull-this-projects-docker-image-from-dockerhub)
+5. [📰 Related Articles](#-related-articles)
 
 ## 🌈 About this project
 
@@ -504,6 +505,16 @@ git push origin master:production
 
 <br />
 <hr />
+
+## 🖼️ Pull this project's docker image from DockerHub
+
+You can also use this project's docker imade from DockerHub:
+<!--
+```bash
+docker pull kevinadhiguna/strapi-dockerize:production
+```
+-->
+DockerHub repo : https://hub.docker.com/repository/docker/kevinadhiguna/strapi-dockerize
 
 ## 📰 Related Articles
 
