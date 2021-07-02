@@ -509,11 +509,11 @@ git push origin master:production
 ## 🖼️ Pull this project's docker image from DockerHub
 
 You can also use this project's docker imade from DockerHub:
-<!--
+
 ```bash
-docker pull kevinadhiguna/strapi-dockerize:production
+docker pull kevinadhiguna/strapi-dockerize:latest
 ```
--->
+
 DockerHub repo : https://hub.docker.com/repository/docker/kevinadhiguna/strapi-dockerize
 
 ## 📰 Related Articles
