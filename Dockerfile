@@ -55,8 +55,8 @@ COPY extensions/ extensions/
 COPY api/ api/
 COPY config/ config/
 
-# Generate a folder called 'dist'.
-# A 'dist' folder stands for distributable and refers to a directory where files will be stored that can be directly used by others without the need to compile or minify the source code that is being reused.
+# Generate a folder called 'build'.
+# The 'build' folder refers to a directory where files will be stored that can be directly used by others without the need to compile or minify the source code that is being reused.
 RUN yarn build
 
 # Run on port 1337
