@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/facilities",
+      "handler": "facility.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/facilities/count",
+      "handler": "facility.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/facilities/:id",
+      "handler": "facility.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/facilities",
+      "handler": "facility.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/facilities/:id",
+      "handler": "facility.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/facilities/:id",
+      "handler": "facility.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
