@@ -76,6 +76,10 @@ type Juventus {
 
 Now, it is clear that available options for `position` are : `GK`. `DF`, `MF`, `FW`.
 
+In addition, there is another content-type named `facility`: <br />
+
+<img src="https://s6.gifyu.com/images/fsdfsdfsdjfk.png" alt="facility" border="0" />
+
 You can create a database such as in MongoDB Atlas or in your local machine (laptop) to use this Strapi project. In addition, if you want to integrate this Strapi app with client side (front-end web), you can use these repos :
 1. [Ant Design Pro Strapi with Apollo GraphQL client](https://github.com/kevinadhiguna/antdpro-strapi-auth)
 2. [Ant Design Pro Strapi with URQL GraphQL client](https://github.com/kevinadhiguna/antdpro-strapi-urql)
