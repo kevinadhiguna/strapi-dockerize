@@ -524,6 +524,41 @@ docker pull kevinadhiguna/strapi-dockerize:latest
 
 DockerHub repo : https://hub.docker.com/repository/docker/kevinadhiguna/strapi-dockerize
 
+<br />
+<hr />
+
+## Reset Admin password in Strapi client (Strapi with UI)
+
+You can reset Strapi admin password by running this command:
+
+### using Yarn
+```bash
+yarn strapi admin:reset-user-password --email=<admin_email_address> --password=<new_admin_password>
+```
+
+### using NPM
+```bash
+npm run strapi admin:reset-user-password --email=<admin_email_address> --password=<new_admin_password>
+```
+
+However if you have installed Strapi globally (not recommended), you can run this command:
+
+```bash
+strapi admin:reset-user-password --email=<admin_email_address> --password=<new_admin_password>
+```
+
+<br/>
+
+Example case: <br/>
+You have `kai@doe.com` registered as the admin email for login credential in Strapi client but you forgot the password. If you use Yarn and want to reset the password to `Kaidoe12345`, you can do so by running :
+
+```bash
+yarn strapi admin:reset-user-password --email=kai@doe.com --password=Kaidoe12345
+```
+
+<br />
+<hr />
+
 ## 📰 Related Articles
 
 - [How to setup Amazon S3 upload provider in your Strapi app](https://dev.to/kevinadhiguna/how-to-setup-amazon-s3-upload-provider-in-your-strapi-app-1opc)
