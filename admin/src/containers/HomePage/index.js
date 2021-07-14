@@ -47,10 +47,10 @@ const SOCIAL_LINKS = [
     name: 'Twitter',
     link: 'https://twitter.com/strapijs',
   },
-  {
-    name: 'Reddit',
-    link: 'https://www.reddit.com/r/Strapi/',
-  },
+  // {
+  //   name: 'Reddit',
+  //   link: 'https://www.reddit.com/r/Strapi/',
+  // },
   {
     name: 'Forum',
     link: 'https://forum.strapi.io',
