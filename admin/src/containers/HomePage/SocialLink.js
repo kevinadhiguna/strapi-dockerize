@@ -19,8 +19,8 @@ function getSrc(name) {
   switch (name) {
     case 'GitHub':
       return Gh;
-    case 'Reddit':
-      return Reddit;
+    // case 'Reddit':
+    //   return Reddit;
     case 'Medium':
       return Medium;
     case 'Slack':
