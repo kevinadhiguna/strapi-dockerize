@@ -488,10 +488,10 @@ docker-compose up
 
 <br />
 
-📝 **Note** : If you want to check the files inside the Docker container, you can use:
+📝 **Note** : If you want to execute a command inside the Docker container, you can run:
 
 ```bash
-docker-compose exec strapi /bin/sh
+docker-compose exec <container_ID> /bin/sh
 ```
 
 <!--
