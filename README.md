@@ -494,6 +494,12 @@ docker-compose up
 docker-compose exec <container_ID> /bin/sh
 ```
 
+or
+
+```bash
+docker-compose exec <container_name> /bin/sh
+```
+
 <!--
 ### How to stop the app :
 Press `ctrl + c` to stop it.
