@@ -122,7 +122,15 @@ using `docker-compose`
 doocker-compose up
 ```
 
-<br />
+<br/>
+
+### ⚠️ Prerequisites of using `docker` and `docker-compose`
+Please make sure you have Docker and docker-compose installed in your machine. Please refer here to install them :
+1. [Docker](https://docs.docker.com/engine/install/) installation
+2. [Docker compose](https://docs.docker.com/compose/install/) installation
+
+<br/>
+
 <hr />
 
 ### ⚙️ Set up application configuration (`.env`) :
