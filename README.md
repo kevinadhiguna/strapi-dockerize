@@ -101,25 +101,36 @@ git clone https://github.com/kevinadhiguna/strapi-dockerize
 cd strapi-dockerize
 ```
 
-3. Install dependencies (using `yarn`) :
+3. Install dependencies :
 ```bash
 yarn
 ```
 
-4. Run your Strapi app either with `yarn` of `docker-compose` :
-- If using `yarn`, please create `.env` then [set up environment variables](#-using-yarn---setup-environment-variables-env-).
-- If using `docker-compose`, please create `docker-compose.yaml` then [configure docker-compose](#-using-docker-compose---configure-docker-composeyml-).
+4. Create a `.env` file which stores application configuation, based on the `.env.example` file:
+```bash
+cp .env.example .env
+```
+
+5. Fill in the `.env` file with the application configuration. This step migth be quite long, please refer the set up application configuration section.
+
+6. Run your Strapi app : <br/>
+
+using `yarn`
+```bash
+yarn develop
+```
+
+using `docker-compose`
+```bash
+doocker-compose up
+```
 
 <br />
 <hr />
 
-### 🧶 using `Yarn` -> setup environment variables (`.env`) :
+### ⚙️ Set up application configuration (`.env`) :
 
-<br />
-
-1. Please create a `.env` file based on `.env.example` file and fill in the variables mentioned below :
-
-#### DATABASE_HOST
+#### *DATABASE_HOST*
 
 If you run your database locally or in your computer, fill :<br />
 ```bash
@@ -133,7 +144,9 @@ DATABASE_HOST=cluster3.abc65.mongodb.net
 
 The above is an example if you host your database in [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 
-#### DATABASE_SRV
+<br/>
+
+#### *DATABASE_SRV*
 
 Value of Database SRV in MongoDB. It could be either `true` or `false` as it is boolean. For example :<br />
 ```bash
@@ -144,35 +157,45 @@ DATABASE_SRV=true
 
 Please have a look at [MongoDB community forum](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjl6OTUjOXwAhWY4nMBHa4RBgkQFjACegQIBhAD&url=https%3A%2F%2Fdeveloper.mongodb.com%2Fcommunity%2Fforums%2Ft%2Fmongodb-or-mongodb-srv%2F1654&usg=AOvVaw1nNUDlH5GVNZDFSL0jl2kj) for more.
 
-#### DATABASE_PORT
+<br/>
+
+#### *DATABASE_PORT*
 
 Port that your Strapi app interacts with database management system (DBMS). For example :<br />
 ```bash
 DATABASE_PORT=27017
 ```
 
-#### DATABASE_NAME
+<br/>
+
+#### *DATABASE_NAME*
 
 The database name in database management system (e.g. : MongoDB, MySQL, PostgreSQL). For instance :<br />
 ```bash
 DATABASE_NAME=myStrapiApp
 ```
 
-#### DATABASE_USERNAME
+<br/>
+
+#### *DATABASE_USERNAME*
 
 The username of your database that you use in your Strapi app. For instance :<br />
 ```bash
 DATABASE_USERNAME=admin
 ```
 
-#### DATABASE_PASSWORD
+<br/>
+
+#### *DATABASE_PASSWORD*
 
 The password of your database that you use in your Strapi app. For instance :<br />
 ```bash
 DATABASE_PASSWORD=admin123
 ```
 
-#### DATABASE_SSL
+<br/>
+
+#### *DATABASE_SSL*
 
 Usually, you set this field if your database in your Strapi app is hosted, for example : 
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for MongoDB
@@ -186,8 +209,9 @@ DATABASE_SSL=true
 
 This fields is boolean. Hence, you can either set it to `true` or `false` only.
 
+<br/>
 
-#### CORS_ORIGIN
+#### *CORS_ORIGIN*
 
 Please add URL/IP address of :
 - App's client-side (a Web App and/or a Mobile app)
@@ -203,12 +227,16 @@ So, if your app's client-side and Strapi admin panel run on http://192.168.1.4:3
 CORS_ORIGIN=http://192.168.1.4:1337,http://192.168.1.4:3000
 ```
 
-#### AWS_ACCESS_KEY_ID
+<br/>
+
+#### *AWS_ACCESS_KEY_ID*
 
 For example :<br />
 ```bash
 AWS_ACCESS_KEY_ID=DGHY4REH7IUVDF908UNV
 ```
+
+<br/>
 
 #### AWS_SECRET_ACCESS_KEY
 
@@ -217,7 +245,9 @@ For example :<br />
 AWS_SECRET_ACCESS_KEY=3bFhYF76zFG+5F78436KJ8bH3x19TALuIxytfNc/
 ```
 
-#### AWS_REGION
+<br/>
+
+#### *AWS_REGION*
 
 For example :
 ```bash
@@ -226,28 +256,36 @@ AWS_REGION=eu-west-2
 
 Please see [AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html) for details. 
 
-#### EMAIL_DEFAULT_FROM
+<br/>
+
+#### *EMAIL_DEFAULT_FROM*
 
 An email address your Strapi app will send an email from. For example :<br />
 ```bash
 EMAIL_DEFAULT_DEFAULT_FROM=hello@example.com
 ```
 
-#### EMAIL_DEFAULT_REPLY_TO
+<br/>
+
+#### *EMAIL_DEFAULT_REPLY_TO*
 
 An email address your Strapi app will be receiving emails. For example :<br />
 ```bash
 EMAIL_DEFAULT_REPLY_TO=reply@example.com
 ```
 
-#### AWS_BUCKET
+<br/>
+
+#### *AWS_BUCKET*
 
 For example :
 ```bash
 AWS_BUCKET=mybucket.mydomain.com
 ```
 
-#### AWS_S3_STORAGE_CLASSES
+<br/>
+
+#### *AWS_S3_STORAGE_CLASSES*
 
 For example :
 ```bash
@@ -256,7 +294,9 @@ AWS_S3_STORAGE_CLASSES=S3 Standard
 
 You can read more about [AWS Storage Classes](https://aws.amazon.com/s3/storage-classes/).
 
-#### CLOUD_NAME
+<br/>
+
+#### *CLOUD_NAME*
 
 This is the cloud name of your Coudinary account. <br />
 This looks like :
@@ -266,7 +306,9 @@ CLOUD_NAME=ehsjuvnxpz
 
 Please leave it blank if your Strapi app foes not use Cloudinary. 
 
-#### API_KEY
+<br/>
+
+#### *API_KEY*
 
 This is API key from Cloudinary. <br />
 For instance :
@@ -276,7 +318,9 @@ API_KEY=253857109845223
 
 You can leave it blank if you do not use Cloudinary.
 
-#### API_SECRET
+<br/>
+
+#### *API_SECRET*
 
 This is API secret from Cloudinary. <br /> 
 For example :
@@ -286,7 +330,9 @@ API_SECRET=DBVrte27_GtyrIUxFGydk_R8tRX
 
 If you do not use Cloudinary, you can leave it blank.
 
-#### SENTRY_DSN
+<br/>
+
+#### *SENTRY_DSN*
 
 This is a Sentry DSN that you obtain from Sentry if you use it. Otherwise, leave it blank. <br />
 For example :
@@ -294,7 +340,9 @@ For example :
 SENTRY_DSN=https://vx547s32f45d7v91q865hgh5421z8932@f584318.ingest.sentry.io/6712395
 ```
 
-#### HOST
+<br/>
+
+#### *HOST*
 
 Simply open terminal and type `ifconfig` (MacOS / Linux-based OS) or `ipconfig` (Windows). You should see like `192.168.1.4` which is the value of this variable.<br>
 Example : 
@@ -302,7 +350,9 @@ Example :
 HOST=http://192.168.1.4
 ```
 
-#### PORT
+<br/>
+
+#### *PORT*
 
 Specify the port that you want to run.<br>
 For example : 
@@ -310,7 +360,9 @@ For example :
 PORT=1337
 ```
 
-#### ADMIN_JWT_SECRET
+<br/>
+
+#### *ADMIN_JWT_SECRET*
 
 Generate a secure token is required for superadmin authentication.<br>
 In terminal, please type :
@@ -331,7 +383,9 @@ Please copy the token and assign it like this :
 ADMIN_JWT_SECRET=ErhxCk10YqNCImwodl5Ml/Maqnw46oTyLjr+9Na4bjmJSLVWnCS90BJRAAkLsspj98caylAJgikBO9ZS0jEiOQ==
 ```
 
-#### NODE_ENV
+<br/>
+
+#### *NODE_ENV*
 
 This refers to the environment that your application runs. It could be `development`, `staging`, `production`, or something else.<br/>
 For example :
@@ -339,14 +393,9 @@ For example :
 NODE_ENV=development
 ```
 
-2. Start Strapi app :
-```bash
-yarn develop
-```
-
-3. Open Strapi admin panel in a browser.
-
 <br />
+
+<!--
 <hr />
 
 ### 🐋 using `docker-compose` -> configure `docker-compose.yml` :
@@ -486,6 +535,7 @@ If you do not make changes but want to run the app again :
 ```bash
 docker-compose up
 ```
+-->
 
 <br />
 
