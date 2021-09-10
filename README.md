@@ -37,7 +37,7 @@
 4. [⚙️ Set up application configuration](#%EF%B8%8F-set-up-application-configuration-env-)
 5. [📝 Executing commands inside the Docker container](#-executing-commands-inside-the-docker-container)
 6. [🖼️ Pull this project's docker image from DockerHub](#%EF%B8%8F-pull-this-projects-docker-image-from-dockerhub)
-7. [🔒 Reset admin password in Strapi client ()Strapi with UI)](#-reset-admin-password-in-strapi-client-strapi-with-ui)
+7. [🔒 Reset admin password in Strapi client (Strapi with UI)](#-reset-admin-password-in-strapi-client-strapi-with-ui)
 8. [💻 Related repositories](#-related-repositories)
 9. [📰 Related articles](#-related-articles)
 
