@@ -565,6 +565,17 @@ yarn strapi admin:reset-user-password --email=kai@doe.com --password=Kaidoe12345
 <br />
 <hr />
 
+## 💻 Related Repositories
+
+Please feel free to have a look at :
+- [Strapi MySQL - docker-compose](https://github.com/kevinadhiguna/strapi-mysql-docker)
+- [Strapi MariaDB - docker-compose](https://github.com/kevinadhiguna/strapi-mariadb-docker)
+- [Strapi MongoDB - docker-compose](https://github.com/kevinadhiguna/strapi-mongo-docker)
+- [Strapi PostgreSQL - docker-compose](https://github.com/kevinadhiguna/strapi-postgresql-docker)
+
+<br/>
+<hr />
+
 ## 📰 Related Articles
 
 - [How to setup Amazon S3 upload provider in your Strapi app](https://dev.to/kevinadhiguna/how-to-setup-amazon-s3-upload-provider-in-your-strapi-app-1opc)
