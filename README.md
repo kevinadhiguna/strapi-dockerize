@@ -398,8 +398,6 @@ For example :
 NODE_ENV=development
 ```
 
-<br />
-
 <!--
 <hr />
 
@@ -542,10 +540,12 @@ docker-compose up
 ```
 -->
 
-<br />
+<br/>
+<hr/>
 
-📝 **Note** : If you want to execute a command inside the Docker container, you can run:
+## 📝 Executing commands inside the Docker container
 
+You can run:
 ```bash
 docker-compose exec <container_ID> /bin/sh
 ```
