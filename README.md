@@ -32,15 +32,12 @@
 1. [🌈 About this project](#-about-this-project)
 2. [✨ What collection-type is inside this project?](#-what-collection-type-is-featured-in-this-project)
 3. [📖 How to Run](#-how-to-run)
-   - [🧶 using `yarn`](#-using-yarn---setup-environment-variables-env-)
-      - Create a `.env` file then set up Environment Variables
-      - Run your Strapi app with `yarn`
-   - [🐋 using `docker-compose`](#-using-docker-compose---configure-docker-composeyml-)
-      - Create a `docker-compose.yml` then configure it
-      - Run your Strapi app with `docker-compose`
-4. [🖼️ Pull this project's docker image from DockerHub](#%EF%B8%8F-pull-this-projects-docker-image-from-dockerhub)
-5. [💻 Related Repositories](#-related-repositories)
-6. [📰 Related Articles](#-related-articles)
+   - 🧶 using `yarn`
+   - 🐋 using `docker-compose`
+4. [⚙️ Set up application configuration](#%EF%B8%8F-set-up-application-configuration-env-)
+5. [🖼️ Pull this project's docker image from DockerHub](#%EF%B8%8F-pull-this-projects-docker-image-from-dockerhub)
+6. [💻 Related Repositories](#-related-repositories)
+7. [📰 Related Articles](#-related-articles)
 
 ## 🌈 About this project
 
