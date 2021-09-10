@@ -111,7 +111,7 @@ yarn
 cp .env.example .env
 ```
 
-5. Fill in the `.env` file with the application configuration. This step migth be quite long, please refer the set up application configuration section.
+5. Fill in the `.env` file with the application configuration. This step migth be quite long, please refer the [set up application configuration](#%EF%B8%8F-set-up-application-configuration-env-) section.
 
 6. Run your Strapi app : <br/>
 
