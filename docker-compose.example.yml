@@ -1,9 +1,13 @@
+# UPDATE : 
+# - This file has nothing to do with this Strapi app and dockerizing it. 
+# - This is just a docker-compose file with some notes. Please use the docker-compose.yml to handle docker-compose things.
+
 version: '3'
 services:
   strapi:
     build: .
     environment:
-      NODE_ENV: YOUR_APP_ENVIRONMENT #(production, staging, development, etc.)
+      NODE_ENV: YOUR_APP_ENVIRONMENT #(e.g. : production, staging, development, etc.)
       # == MongoDB Atlas configuration ==
       DATABASE_CLIENT: mongo
       DATABASE_HOST: DB_HOST #(e.g. : cluster3.abc65.mongodb.net if you are using MongoDB Atlas)
@@ -19,9 +23,10 @@ services:
       DATABASE_SSL: 'true' #('true' or 'false', please note that it MUST be string or null)
       # AUTHENTICATION_DATABASE: admin
       # == CORS ==
-      CORS_ORIGIN: ALLOWED_CORS_ORIGIN #(e.g. : http://192.168.1.5:8000,http://192.168.1.5:3000,http://192.168.1.16:1337) 
+      CORS_ORIGIN: ALLOWED_CORS_ORIGIN #(e.g. : http://192.168.1.5:8000,http://192.168.1.5:3000,http://192.168.1.16:1337,https://my-strapi-website.com,https://my-another-website.net) 
       # == JWT SECRET for your Strapi app ==
       ADMIN_JWT_SECRET: YOUR_ADMIN_JWT_SECRET #(e.g. : ErhxCk10YqNCImwodl5Ml/Maqnw46oTyLjr+9Na4bjmJSLVWnCS90BJRAAkLsspj98caylAJgikBO9ZS0jEiOQ==)
+      # ADMIN_JWT_SECRET (Admin JWT Secret) is different from Admin's (Superadmin's) JWT. Please have a look at https://github.com/kevinadhiguna/js-create-jwt.
       # == AWS configuration ==
       AWS_REGION: AWS_REGION #(e.g.: eu-west-3)
       AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID #(e.g.: DGHY4REH7IUVDF908UNV)
