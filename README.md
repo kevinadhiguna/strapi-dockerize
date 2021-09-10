@@ -31,17 +31,23 @@
 
 1. [🌈 About this project](#-about-this-project)
 2. [✨ What collection-type is inside this project?](#-what-collection-type-is-featured-in-this-project)
-3. [📖 How to Run](#-how-to-run)
+3. [📖 How to run](#-how-to-run)
    - 🧶 using `yarn`
    - 🐋 using `docker-compose`
 4. [⚙️ Set up application configuration](#%EF%B8%8F-set-up-application-configuration-env-)
-5. [🖼️ Pull this project's docker image from DockerHub](#%EF%B8%8F-pull-this-projects-docker-image-from-dockerhub)
-6. [💻 Related Repositories](#-related-repositories)
-7. [📰 Related Articles](#-related-articles)
+5. [📝 Executing commands inside the Docker container](#-executing-commands-inside-the-docker-container)
+6. [🖼️ Pull this project's docker image from DockerHub](#%EF%B8%8F-pull-this-projects-docker-image-from-dockerhub)
+7. [🔒 Reset admin password in Strapi client ()Strapi with UI)](#-reset-admin-password-in-strapi-client-strapi-with-ui)
+8. [💻 Related repositories](#-related-repositories)
+9. [📰 Related articles](#-related-articles)
+
+<br/>
 
 ## 🌈 About this project
 
 This is a Strapi app powered by Docker and docker-compose. Nevertheless, this app provides an example and a guide to configure your Strapi app with hosted database service such as MongoDB Atlas.
+
+<br/>
 
 ## ✨ What collection-type is featured in this project?
 
@@ -85,6 +91,8 @@ In addition, there is another content-type named `facility`: <br />
 You can create a database such as in MongoDB Atlas or in your local machine (laptop) to use this Strapi project. In addition, if you want to integrate this Strapi app with client side (front-end web), you can use these repos :
 1. <a href="https://github.com/kevinadhiguna/antdpro-strapi-auth" target="_blank">Ant Design Pro Strapi with Apollo GraphQL client</a>
 2. <a href="https://github.com/kevinadhiguna/antdpro-strapi-urql" target="_blank">Ant Design Pro Strapi with URQL GraphQL client</a>
+
+<br/>
 
 ## 📖 How to Run
 
