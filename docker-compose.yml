@@ -17,7 +17,4 @@ services:
       CORS_ORIGIN: ${CORS_ORIGIN}
       ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
     ports:
-      - '${PORT}:${PORT}' # format => 'host port':'container port'
-      # -- NOTE --
-      # 'HOST_PORT' is the port that will be exposable to the public.
-      # 'CONTAINER_PORT' is the internal port in which the app will be running on.
+      - '${PORT}:${PORT}'
