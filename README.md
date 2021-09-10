@@ -589,7 +589,7 @@ DockerHub repo : https://hub.docker.com/repository/docker/kevinadhiguna/strapi-d
 <br />
 <hr />
 
-## Reset Admin password in Strapi client (Strapi with UI)
+## 🔒 Reset Admin password in Strapi client (Strapi with UI)
 
 You can reset Strapi admin password by running this command:
 
