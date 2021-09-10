@@ -39,7 +39,8 @@
       - Create a `docker-compose.yml` then configure it
       - Run your Strapi app with `docker-compose`
 4. [🖼️ Pull this project's docker image from DockerHub](#%EF%B8%8F-pull-this-projects-docker-image-from-dockerhub)
-5. [📰 Related Articles](#-related-articles)
+5. [💻 Related Repositories](#-related-repositories)
+6. [📰 Related Articles](#-related-articles)
 
 ## 🌈 About this project
 
