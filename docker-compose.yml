@@ -2,6 +2,7 @@ version: '3'
 services:
   strapi:
     build: .
+    container_name: strapi_dockerize
     environment:
       # Using Variable Subtitution to obtain environment variables. For more : https://docs.docker.com/compose/compose-file/compose-file-v3/#variable-substitution.
       NODE_ENV: ${NODE_ENV}

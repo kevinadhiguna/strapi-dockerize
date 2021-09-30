@@ -6,6 +6,7 @@ version: '3'
 services:
   strapi:
     build: .
+    container_name: YOUR_CONTAINER_NAME
     environment:
       NODE_ENV: YOUR_APP_ENVIRONMENT #(e.g. : production, staging, development, etc.)
       # == MongoDB Atlas configuration ==
