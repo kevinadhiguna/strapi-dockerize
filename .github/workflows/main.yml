@@ -15,7 +15,8 @@ jobs:
     strategy:
       matrix:
         # For more : https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#github-hosted-runners
-        # os: [windows-latest, ubuntu-latest, macos-latest] # There are some issues with windows-latest and macos-latest ...
+        # os: [windows-latest, ubuntu-latest, macos-latest]
+        # There are some issues with windows-latest and macos-latest ...
         os: [ubuntu-latest]
       fail-fast: true
 
