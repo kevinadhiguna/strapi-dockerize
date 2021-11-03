@@ -580,7 +580,7 @@ git push origin master:staging
 git push origin master:production
 ```
 -->
-
+<!--
 <br />
 <hr />
 
@@ -593,7 +593,7 @@ docker pull kevinadhiguna/strapi-dockerize:latest
 ```
 
 DockerHub repo : https://hub.docker.com/repository/docker/kevinadhiguna/strapi-dockerize
-
+-->
 <br />
 <hr />
 
