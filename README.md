@@ -357,7 +357,7 @@ SENTRY_DSN=https://vx547s32f45d7v91q865hgh5421z8932@f584318.ingest.sentry.io/671
 
 #### *HOST*
 
-Simply open terminal and type `ifconfig` (MacOS / Linux-based OS) or `ipconfig` (Windows). You should see like `192.168.1.4` which is the value of this variable.<br>
+Simply open terminal and type `ip addr show` (MacOS / Linux-based OS) or `ipconfig` (Windows). You should see like `192.168.1.4` which is the value of this variable.<br>
 Example : 
 ```bash
 HOST=http://192.168.1.4
