@@ -27,6 +27,14 @@
   <img alt="GitLab CI" src="https://img.shields.io/badge/GitLab_CI-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white"/>
 </div>
 
+<br />
+
+## ⚠️ Warning
+
+This project works only on NodeJS v10.16.0 - v14.x.x. Please have a look at this [issue](https://github.com/kevinadhiguna/strapi-dockerize/issues/4) for more.
+
+<br />
+
 ## 📚 Table of Contents
 
 1. [🌈 About this project](#-about-this-project)
