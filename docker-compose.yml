@@ -5,18 +5,18 @@ services:
     container_name: strapi_dockerize
     environment:
       # Using Variable Subtitution to obtain environment variables. For more : https://docs.docker.com/compose/compose-file/compose-file-v3/#variable-substitution.
-      NODE_ENV: ${NODE_ENV}
+      NODE_ENV: ${NODE_ENV:-development}
       # == MongoDB Atlas configuration ==
       DATABASE_CLIENT: mongo
-      DATABASE_HOST: ${DATABASE_HOST}
-      DATABASE_SRV: ${DATABASE_SRV}
-      DATABASE_PORT: ${DATABASE_PORT}
-      DATABASE_NAME: ${DATABASE_NAME}
-      DATABASE_USERNAME: ${DATABASE_USERNAME}
-      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
-      DATABASE_SSL: ${DATABASE_SSL}
+      DATABASE_HOST: ${DATABASE_HOST:-127.0.0.1}
+      DATABASE_SRV: ${DATABASE_SRV:-true}
+      DATABASE_PORT: ${DATABASE_PORT:-27017}
+      DATABASE_NAME: ${DATABASE_NAME:-myStrapiApp}
+      DATABASE_USERNAME: ${DATABASE_USERNAME:-admin}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-admin123}
+      DATABASE_SSL: ${DATABASE_SSL:-false}
       # AUTHENTICATION_DATABASE: admin
       CORS_ORIGIN: ${CORS_ORIGIN}
-      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET:-ErhxCk10YqNCImwodl5Ml/Maqnw46oTyLjr+9Na4bjmJSLVWnCS90BJRAAkLsspj98caylAJgikBO9ZS0jEiOQ==}
     ports:
-      - '${PORT}:${PORT}'
+      - '${PORT:-1337}:${PORT:-1337}'
