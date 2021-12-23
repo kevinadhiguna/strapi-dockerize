@@ -155,7 +155,7 @@ Please make sure you have Docker and docker-compose installed in your machine. P
 
 If you run your database locally or in your computer, fill :<br />
 ```bash
-DATABASE_HOST=127.0.01
+DATABASE_HOST=127.0.0.1
 ```
 
 Otherwise, please enter your database host URL, such as :<br />
