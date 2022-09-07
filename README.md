@@ -663,3 +663,8 @@ Should you have any questions or discussion, please feel free to ask [here](http
 <br />
 
 [![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/strapi-dockerize)](https://github.com/kevinadhiguna)
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
